@@ -74,13 +74,25 @@ WSGI_APPLICATION = 'ıntern.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+     'default': {
+        # MySQL database engine class.
+        'ENGINE': 'django.db.backends.mysql',
+        # MySQL database host ip.
+        'HOST': 'localhost',
+        # port number.
+        'PORT': '3306',
+        # database name.
+        'NAME': 'internship',
+        # user name.
+        'USER': 'root',
+        # password
+        'PASSWORD': 'root',
+        # connect options
+        'OPTIONS': {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'", },
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

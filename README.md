@@ -28,9 +28,8 @@ configuration in the file: blackmoon/blackmoon/settings.py.
 
 5. Import a Backup to your database if you have one.
 
-6. Download the "media" backup file from [Download Media Backup](https://drive.google.com/file/d/1bUWDVtqMgN_DPsZs50i2zc2TgWQnovVX/view?usp=sharing "Media Backup")
 
-7. Run the Django Server:
+6. Run the Django Server:
 
     ```python
     python3 manage.py runserver
