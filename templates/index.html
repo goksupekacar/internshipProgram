@@ -1,10 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Interner Home Page
+{% endblock %}
 
-</body>
-</html>
+{% block content_body %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8">
+            <img src="static/photos/4557388.jpg" class="responsive" width="600" height="400">
+        </div>
+        <div class="col-lg-4">
+            <div class="card text-white bg-danger mb-3 " width="600" height="400">
+                <div class="card-header"></div>
+                <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <h2 class="card-title">INTERNSHIP</h2>
+                                <h3 class="card-title">OPPURTUNITY JOB</h3>
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h5>
+                                <p class="card-text"></p>
+                                <button type="button" class="btn btn-dark"><span
+                                        class="glyphicon glyphicon-user"></span><a href="{% url 'login' %}">Login</a>
+                                </button>
+                                <button type="button" class="btn btn-dark"><span
+                                        class="glyphicon glyphicon-log-in"></span><a href="{% url 'register' %}">Sign
+                                    Up</a></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about_us" class=" container about-section col-lg-12">
+
+    <h1>About Us</h1>
+</div>
+<h3 style="text-align:center">Our Website</h3>
+
+
+<div class="row">
+    <div class="aboutcolumn ">
+        <div class="card">
+            <img src="static/photos/4574122.jpg" alt="Jane" class="t1" style="width:75%">
+            <div class="aboutcontainer">
+                <h3>Searching Job</h3>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutcolumn">
+        <div class="card">
+            <img src="static/photos/student.jpg" alt="Mike" style="width:75%"
+                 class="t2">
+            <div class="aboutcontainer">
+                <h3>Adding Comments</h3>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutcolumn">
+        <div class="card">
+            <img src="static/photos/4563775.jpg" alt="John" style="width:75%;margin-left:10px;">
+            <div class="aboutcontainer">
+                <h3>Upload CV</h3>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+    {% endblock content_body %}
+
+<!-- Footer -->
+
+<!-- Footer -->
+
+
+
+

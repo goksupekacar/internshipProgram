@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block title %}
+    Interner Company Page
+{% endblock %}
+{% block content_body %}
+    <!-- Edit Profile Section -->
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="profilecard">
+                <h5 class="card-title">
+                    <center>Company Profile Settings</center>
+                </h5>
+                <div>
+                    <center><img src="/static/photos/company.png" width="150" height="auto"/></center>
+                    <br></div>
+                <div class="card-body">
+                    <center><input type="text" class="form-control" name="company_name" id="" value="Company Name"
+                                   disabled><br>
+                    </center>
+                    <center><input type="text" class="form-control" name="tax_id" id="" value="Tax id" disabled><br>
+                    </center>
+                    <center><input type="text" class="form-control" name="foundation_year" value="Foundation Year"
+                                   disabled><br>
+                    </center>
+
+                    <div class="col-xl-12">
+                        <button style="margin-left:155px;" type="button" class="btn btn-dark" href="login.html"><span
+                                class="glyphicon glyphicon-pencil"></span><a href="#">Edit Company Profile</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Edit Profile Section -->
+
+
+        <!-- Applied Offers -->
+        <div class="col-sm-6">
+            <div class="profilecard">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <center>Company Job Posts</center>
+                    </h5>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">Post Date</th>
+                            <th scope="col">Location</th>
+                            <th scope="col"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td><a href="listOfApplicants.html"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@mdo</td>
+                            <td><a href="listOfApplicants.html"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@mdo</td>
+                            <td><a href="listOfApplicants.html"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@mdo</td>
+                            <td><a href="listOfApplicants.html"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@mdo</td>
+                            <td><a href="listOfApplicants.html"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Company Job Posts-->
+        </div>
+    </div>
+{% endblock content_body %}

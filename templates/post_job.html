@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block title %}
+        Interner Company Page
+    {% endblock %}
+{% block content_body %}
+<!-- Post Job -->
+<div class="row">
+    <div class="col-sm-6">
+        <div class="postcard">
+            <h5 class="card-title">
+                <center>Post Job</center>
+            </h5>
+            <div class="card-body">
+                <div style="margin-left:110px" class=row>
+                    <div class="col-md-8">
+                        <form method="POST" action="">
+                            <center><input type="text" name="title" placeholder="Title" class="form-control"
+                                           required><br></center>
+                            <center><textarea class="form-control" name="description" id="description" rows="3"
+                                              placeholder="Description" required></textarea><br></center>
+
+                            <center><input type="text" name="department" placeholder="Depertmant" class="form-control"
+                                           required><br></center>
+
+                            <center><input type="text" name="location" placeholder="Location" class="form-control"
+                                           required><br></center>
+
+                            <center><input type="date" name="start_date" placeholder="Start Date" class="form-control"
+                                           min="2021" max="2030" required><br>
+                    </div>
+                    <div class="col-md-12">
+                        <button style="margin-left:55px;" type="submit" class="btn btn-dark" ><span
+                                class="glyphicon glyphicon-ok"></span><a href="{% url 'company-profile/' %}">Post Offer !</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </center>
+    </form>
+    <!-- Edit Profile Section -->
+
+</div>
+ {% endblock content_body %}

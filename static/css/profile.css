@@ -1,0 +1,32 @@
+.profilecard{
+   background-image: linear-gradient(15deg, #8143fdf2 0%, #8282f0 100%);
+    color: white;
+    width: 85%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 55px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+
+}
+
+
+.applicantscard{
+   background-image: linear-gradient(15deg, #8143fdf2 0%, #8282f0 100%);
+    color: white;
+    width: 85%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 40rem;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.postcard{
+   background-image: linear-gradient(15deg, #8143fdf2 0%, #8282f0 100%);
+    color: white;
+    width: 85%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 45rem;
+    box-shadow: 10px 10px 5px #aaaaaa;
+
+}
