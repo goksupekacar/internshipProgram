@@ -32,4 +32,8 @@ def post_job(request):
 def listOfApplicants(request):
     return render(request, 'listOfApplicants.html')
 
+def searchResults(request):
+    return render(request, 'search-results.html')
+
+
 

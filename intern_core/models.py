@@ -12,7 +12,7 @@ class User_Profile(models.Model):
 
 
 class Company_Profile(User_Profile):
-    image = models.ImageField(upload_to='company_image', null=True, blank=True, default='company_image/default.png')
+    image = models.ImageField(upload_to='company_image', null=True, blank=True, default='/static/photos/company.png')
     company_name = models.CharField(max_length=100)
     tax_id = models.IntegerField()
     foundation_year = models.IntegerField()

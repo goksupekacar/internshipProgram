@@ -10,4 +10,5 @@ urlpatterns = [
     path('intern-profile/', views.intern_profile, name='internProfile'),
     path('company-profile/', views.company_profile, name='company-profile'),
     path('listOfApplicants/', views.listOfApplicants, name='listOfApplicants'),
+    path('search-results/', views.searchResults, name='searchResults'),
 ]
