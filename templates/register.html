@@ -3,7 +3,10 @@
 {% block title %}
     Interner Register Page
 {% endblock %}
+
+
 {% block content_body %}
+
     <body class="form-v8">
     <div class="page-content">
         <div class="form-v8-content">
@@ -19,6 +22,7 @@
                 <form class="form-detail" action="#" method="POST">
                     {% csrf_token %}
                     {{ form.as_p }}
+
                     <div class="form-row-last">
                         <center>
                             <button type="submit" class="register" style="padding: 15px">Register</button>

@@ -17,7 +17,7 @@ def register(request):
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request,user)
-            return redirect('home')
+            return redirect('login')
     else:
         form = RegisterFormIntern()
     return render(request, 'register.html', {'form': form})
@@ -50,7 +50,7 @@ def registerCompany(request):
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request,user)
-            return redirect('home')
+            return redirect('login')
     else:
         form = RegisterFormCompany()
     return render(request, 'registerCompany.html', {'form': form})
@@ -63,7 +63,7 @@ def logout_view(request):
 def contact_view(request):
     return render(request, 'contact.html')
 
-
+@login_required
 def intern_profile(request):
     return render(request, 'intern-profile.html')
 
