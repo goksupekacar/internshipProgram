@@ -18,13 +18,13 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-12">
 
+                                {% if not user.is_authenticated %}
 
-                                    <h2 class="card-title">INTERNSHIP</h2>
                                     <h3 class="card-title">OPPURTUNITY JOB</h3>
                                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h5>
                                     <p class="card-text"></p>
-                                    {% if not user.is_authenticated %}
+
                                         <button type="button" class="btn btn-dark"><span
                                                 class="glyphicon glyphicon-user"></span><a href="{% url 'login' %}">Login</a>
                                         </button>
@@ -41,12 +41,20 @@
 
 
                                 {% if user.is_authenticated %}
-                                    <form class="form-inline d-flex justify-content-center md-form form-sm active-pink active-pink-2 mt-2">
-                                        <i class="fas fa-search" aria-hidden="true"></i>
-                                        <input class="form-control form-control-sm ml-3 w-75" type="text"
-                                               placeholder="Search"
-                                               aria-label="Search">
-                                    </form>
+                                    <h2 class="card-title">SEARCH</h2><br>
+
+
+                                        <form class="example" style="">
+                                            <center><input style="width: 55%; height: 4%;border-radius: 25px;"
+                                                           placeholder="Search.." name="search2"></center>
+                                            <br>
+
+                                           <center> <button type="submit" style="width: 15%; " class="btn btn-dark glyphicon glyphicon-search">
+
+                                            </button></center>
+
+                                        </form>
+                                    </div>
                                 {% endif %}
                             </div>
 
