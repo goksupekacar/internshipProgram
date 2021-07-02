@@ -31,9 +31,12 @@
                 <li><a href="{% url 'home' %}">About Us</a></li>
 
             </ul>
+
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Username</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url "internProfile" %}"><span class="glyphicon glyphicon-user"></span> {{ user.username }}</a></li>
+                    <li><a href="{% url "logout" %}"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                {% endif %}
             </ul>
         </div>
     </div>

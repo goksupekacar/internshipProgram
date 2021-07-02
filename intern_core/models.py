@@ -19,7 +19,7 @@ class Company_Profile(User_Profile):
 
 
     def get_profile_url(self):
-        return "/company_profile/{}".format(self.user.pk)
+        return "/company-profile/{}".format(self.user.pk)
 
 
 class Intern_Profile(User_Profile):
@@ -28,7 +28,7 @@ class Intern_Profile(User_Profile):
     birth_date = models.DateField()
     department = models.CharField(max_length=2000)
     image = models.ImageField(upload_to='intern_image', null=True, blank=True,
-                              default='photos/id-card.png')
+                              default='/static/photos/id-card.png')
 
     def get_profile_url(self):
-        return "/intern_profile/{}".format(self.user.pk)
+        return "/intern-profile/{}".format(self.user.pk)
